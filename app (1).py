@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("⚡ AI-Based Electrical Hazard Detection")
 st.write("Upload an image to detect visible electrical hazards.")
 
-model = YOLO("/content/runs/detect/train/weights/best.pt")
+model = YOLO("best.pt")
 
 uploaded_file = st.file_uploader(
     "Upload an electrical image",
